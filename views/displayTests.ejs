@@ -1,0 +1,12 @@
+<h3 class="title">Test Case Results</h3>
+    <h3>Results:</h3>
+    <% allTestCases.forEach(testCase => { %>
+        <p><strong><%= testCase.title %></strong></p>
+        <p><strong>Test 1:</strong>         <%= testCase.test1 %>% </p>
+        <p><strong>Test 2:</strong>         <%= testCase.test2 %>% </p>
+        <p><strong>Homework 1:</strong>     <%= testCase.homework1 %>% </p>
+        <p><strong>Homework 2:</strong>     <%= testCase.homework2 %>% </p>
+        <p><strong>Homework 3:</strong>     <%= testCase.homework3 %>% </p>
+        <p><strong>Final Grade:</strong>    <%= testCase.finalgrade%>%, <%= testCase.lettergrade%></p>
+        <hr />
+    <% }); %>
